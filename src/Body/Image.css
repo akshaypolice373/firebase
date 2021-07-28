@@ -1,0 +1,28 @@
+.align {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.size {
+    font-size: 24px;
+    line-height: 27px;
+    overflow-wrap: break-word;
+}
+
+.link {
+    color: #0052d6;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.margin {
+    margin-bottom: 30px;
+}
+
+.image {
+    border: 0.5px solid rgb(218, 211, 211);
+}

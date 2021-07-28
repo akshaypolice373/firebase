@@ -1,0 +1,124 @@
+[debug] [2021-07-28T09:38:27.706Z] ----------------------------------------------------------------------
+[debug] [2021-07-28T09:38:27.711Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\87628\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-07-28T09:38:27.712Z] CLI Version:   9.16.0
+[debug] [2021-07-28T09:38:27.712Z] Platform:      win32
+[debug] [2021-07-28T09:38:27.713Z] Node Version:  v15.8.0
+[debug] [2021-07-28T09:38:27.715Z] Time:          Wed Jul 28 2021 15:08:27 GMT+0530 (India Standard Time)
+[debug] [2021-07-28T09:38:27.715Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-28T09:38:27.875Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-28T09:38:27.875Z] > authorizing via signed-in user (8762868073akshay@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\87628\OneDrive\Desktop\Pgms\React\webapp
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using homepageofgartner-7fc65. 
+[debug] [2021-07-28T09:38:36.205Z] > refreshing access token with scopes: []
+[debug] [2021-07-28T09:38:36.206Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-28T09:38:37.080Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 28 Jul 2021 09:38:36 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-28T09:38:37.245Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/homepageofgartner-7fc65 [none]
+[debug] [2021-07-28T09:38:39.448Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/homepageofgartner-7fc65 200
+[debug] [2021-07-28T09:38:39.449Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/homepageofgartner-7fc65 {"projectId":"homepageofgartner-7fc65","projectNumber":"257732636812","displayName":"HomePageOfGartner","name":"projects/homepageofgartner-7fc65","resources":{"hostingSite":"homepageofgartner-7fc65"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-07-28T09:38:49.082Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-07-28T09:38:49.390Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-07-28T09:38:49.391Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.8.0","browserURL":"https://www.gstatic.com/firebasejs/8.8.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.8.0/firebase.tgz"},"live":{"version":"8.8","browserURL":"https://www.gstatic.com/firebasejs/live/8.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/8.8.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.8.0/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.8.0/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.8.0/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.8.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.8.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.8.0/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\87628\OneDrive\Desktop\Pgms\React\webapp 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=144694607&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-07-28T09:39:22.598Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"33050e23a2cad58dc1f9","redirect_uri":"http://localhost:9005","state":"144694607"}
+[debug] [2021-07-28T09:39:23.011Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Wed, 28 Jul 2021 09:39:23 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"e362d36175514db466e676ce51108839\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com render-temp.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"FF33:60E2:10FD10:148C72:610125CA"}
+[debug] [2021-07-28T09:39:23.029Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-07-28T09:39:23.473Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-07-28T09:39:23.474Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"akshaykumarpolicepatil","id":60973316,"node_id":"MDQ6VXNlcjYwOTczMzE2","avatar_url":"https://avatars.githubusercontent.com/u/60973316?v=4","gravatar_id":"","url":"https://api.github.com/users/akshaykumarpolicepatil","html_url":"https://github.com/akshaykumarpolicepatil","followers_url":"https://api.github.com/users/akshaykumarpolicepatil/followers","following_url":"https://api.github.com/users/akshaykumarpolicepatil/following{/other_user}","gists_url":"https://api.github.com/users/akshaykumarpolicepatil/gists{/gist_id}","starred_url":"https://api.github.com/users/akshaykumarpolicepatil/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/akshaykumarpolicepatil/subscriptions","organizations_url":"https://api.github.com/users/akshaykumarpolicepatil/orgs","repos_url":"https://api.github.com/users/akshaykumarpolicepatil/repos","events_url":"https://api.github.com/users/akshaykumarpolicepatil/events{/privacy}","received_events_url":"https://api.github.com/users/akshaykumarpolicepatil/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":14,"public_gists":0,"followers":0,"following":0,"created_at":"2020-02-12T13:51:54Z","updated_at":"2021-07-28T09:39:18Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":10716,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as akshaykumarpolicepatil 
+[info] 
+[debug] [2021-07-28T09:41:55.483Z] >>> [apiv2][query] GET https://api.github.com/repos/akshaypolice373/webapp/actions/secrets/public-key type=owner
+[debug] [2021-07-28T09:41:55.894Z] <<< [apiv2][status] GET https://api.github.com/repos/akshaypolice373/webapp/actions/secrets/public-key 403
+[debug] [2021-07-28T09:41:55.895Z] <<< [apiv2][body] GET https://api.github.com/repos/akshaypolice373/webapp/actions/secrets/public-key {"message":"Must have admin rights to Repository.","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2021-07-28T09:42:06.652Z] >>> [apiv2][query] GET https://api.github.com/repos/akshaypolice373/webapp/actions/secrets/public-key type=owner
+[debug] [2021-07-28T09:42:06.997Z] <<< [apiv2][status] GET https://api.github.com/repos/akshaypolice373/webapp/actions/secrets/public-key 403
+[debug] [2021-07-28T09:42:06.998Z] <<< [apiv2][body] GET https://api.github.com/repos/akshaypolice373/webapp/actions/secrets/public-key {"message":"Must have admin rights to Repository.","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2021-07-28T09:42:26.379Z] >>> [apiv2][query] GET https://api.github.com/repos/akshaypolice373/webapp/actions/secrets/public-key type=owner
+[debug] [2021-07-28T09:42:26.720Z] <<< [apiv2][status] GET https://api.github.com/repos/akshaypolice373/webapp/actions/secrets/public-key 403
+[debug] [2021-07-28T09:42:26.720Z] <<< [apiv2][body] GET https://api.github.com/repos/akshaypolice373/webapp/actions/secrets/public-key {"message":"Must have admin rights to Repository.","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2021-07-28T09:42:42.967Z] >>> [apiv2][query] GET https://api.github.com/repos/akshaypolice373/webapp/actions/secrets/public-key type=owner
+[debug] [2021-07-28T09:42:43.299Z] <<< [apiv2][status] GET https://api.github.com/repos/akshaypolice373/webapp/actions/secrets/public-key 403
+[debug] [2021-07-28T09:42:43.299Z] <<< [apiv2][body] GET https://api.github.com/repos/akshaypolice373/webapp/actions/secrets/public-key {"message":"Must have admin rights to Repository.","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2021-07-28T09:43:05.107Z] >>> [apiv2][query] GET https://api.github.com/repos/n/actions/secrets/public-key type=owner
+[debug] [2021-07-28T09:43:05.488Z] <<< [apiv2][status] GET https://api.github.com/repos/n/actions/secrets/public-key 404
+[debug] [2021-07-28T09:43:05.489Z] <<< [apiv2][body] GET https://api.github.com/repos/n/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-28T09:43:07.160Z] >>> [apiv2][query] GET https://api.github.com/repos/n/actions/secrets/public-key type=owner
+[debug] [2021-07-28T09:43:07.487Z] <<< [apiv2][status] GET https://api.github.com/repos/n/actions/secrets/public-key 404
+[debug] [2021-07-28T09:43:07.488Z] <<< [apiv2][body] GET https://api.github.com/repos/n/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-28T09:43:31.394Z] >>> [apiv2][query] GET https://api.github.com/repos/akshaypolice373/firebase/actions/secrets/public-key type=owner
+[debug] [2021-07-28T09:43:31.780Z] <<< [apiv2][status] GET https://api.github.com/repos/akshaypolice373/firebase/actions/secrets/public-key 403
+[debug] [2021-07-28T09:43:31.780Z] <<< [apiv2][body] GET https://api.github.com/repos/akshaypolice373/firebase/actions/secrets/public-key {"message":"Must have admin rights to Repository.","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 

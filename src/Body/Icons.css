@@ -1,0 +1,30 @@
+.icon_img {
+    width: 80px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.font_size {
+    font-size: 21px;
+}
+
+.icons {
+    margin: 10px;
+    padding-left: 15px;
+    padding-bottom: 35px;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sub_icons {
+    width: 530px;
+    height: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    word-wrap: break-word;
+    color: #002856;
+    font-size: 21px;
+    font-weight: 900;
+}
